@@ -16,15 +16,15 @@ public class Login extends HttpServlet {
 	private static final long serialVersionUID = -9071757192018689176L;
 	public static final String USER_ACCESS_GRANTED = "access";
 
-	String formLogin = "<html><center>\r\n" + "		   <form action=\"\" method='post'>\r\n"
-			+ "		   <table border=\"0\">\r\n" + "		      <tr>\r\n"
-			+ "		         <td width=\"100\">Login</td>\r\n"
-			+ "		         <td ><input type=\"text\" name=\"login\" /></td>\r\n" + "		      </tr>\r\n"
-			+ "		      <tr>\r\n" + "		         <td>Password</td>\r\n"
-			+ "		         <td><input type=\"text\" name=\"password\" /></td>\r\n" + "		      </tr>\r\n"
-			+ "		      <tr>\r\n"
-			+ "		         <td align=\"center\" colspan=\"2\"><input type=\"submit\" value=\"Send\" /></td>\r\n"
-			+ "		      </tr>\r\n" + "\r\n" + "		   </table>\r\n" + "		   </form></center></html>";
+	String formLogin = "<html><center><form action='' method='post'>"
+			+ "<table border='0'><tr>"
+			+ "<td width='100'>Login</td>"
+			+ "<td ><input type='text' name='login' /></td></tr>"
+			+ "<tr><td>Password</td>"
+			+ "<td><input type='password' name='password' /></td></tr>"
+			+ "<tr>"
+			+ "<td align='center' colspan='2'><input type='submit' value='Send' /></td>"
+			+ "</tr></table></form></center></html>";
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
